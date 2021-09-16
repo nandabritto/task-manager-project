@@ -26,7 +26,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fas-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home')}}">Home</a></li>
-                    <li><a href="">New Task</a></li>
+                    <li><a href="{{ url_for('add_task')}}">New Task</a></li>
                     <li><a href="{{ url_for('categories')}}">Categories</a></li>
                 </ul>
         </nav>
@@ -34,7 +34,7 @@
         <!-------------- Mobile navbar-->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('add_task')}}">New Task</a></li>
             <li><a href="{{ url_for('categories')}}">Categories</a></li>
 
         </ul>
@@ -56,7 +56,7 @@
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- My JavaScript -->
-    <link src="{{ url_for('static', filename='js/script.js') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
